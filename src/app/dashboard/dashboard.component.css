@@ -1,0 +1,11 @@
+
+
+.pred-container {
+  padding: 90px 120px
+}
+
+.pred-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start
+}

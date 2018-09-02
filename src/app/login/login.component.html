@@ -1,0 +1,38 @@
+<!--<div class="login-form">
+  <form novalidate [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <h4>PREDICTO</h4>
+    <br>
+    <label>Email address</label><br>
+    <input type="email" formControlName="email" required class="form-control"><br>
+    <label>Password</label><br>
+    <input type="password" formControlName="password" required class="form-control"><br>
+    <button type="submit">
+      <b>Login</b>
+    </button><br>
+  </form>
+</div>-->
+
+<div class="signin-content">
+  <mat-card>
+    <mat-card-content>
+      <form #f="ngForm" (ngSubmit)="signIn(f.value)">
+        <p>Please login to continue</p>
+        <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+        <mat-form-field class="full-width-input">
+          <input matInput type="email" id="inputEmail" name="email" ngModel class="form-control" placeholder="User" required autofocus>
+          <!--<mat-error *ngIf="isFieldInvalid('email')">
+            Please inform your user name
+          </mat-error>-->
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <input matInput type="password" id="inputPassword" name="password" ngModel class="form-control" placeholder="Password" required>
+          <!--<mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your password
+          </mat-error>-->
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
