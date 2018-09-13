@@ -37,6 +37,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LeftColumnComponent } from './left-column/left-column.component';
 import { RightColumnComponent } from './right-column/right-column.component';
 import { DeviceDetailsComponent } from './device-details/device-details.component';
+import { LocationMapCardComponent } from './cards/location-map-card/location-map-card.component';
 
 export function getAuthHttp(http) {
   return new AuthHttp(new AuthConfig({
@@ -65,7 +66,8 @@ export function getAuthHttp(http) {
     FooterComponent,
     LeftColumnComponent,
     RightColumnComponent,
-    DeviceDetailsComponent
+    DeviceDetailsComponent,
+    LocationMapCardComponent
   ],
   imports: [
     BrowserModule,

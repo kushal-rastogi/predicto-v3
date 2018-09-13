@@ -2,6 +2,115 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 @charset "UTF-8";
+.pred-container {
+  padding: 90px 120px
+}
+
+.pred-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start
+}
+
+.pred-card {
+  width: 380px;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+  margin: 0 20px 20px 0
+}
+
+.pred-card-title, .pred-card-footer {
+  display: flex;
+  align-items: center
+}
+
+.pred-card-title h4, .pred-card-footer a {
+  font-weight: 500
+}
+
+.pred-card-title {
+  border-bottom: 1px solid #F2F2F2
+}
+
+.pred-card-title h4 {
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 15px
+}
+
+.pred-card-title .pred-ellipsis {
+  padding: 10px 15px 8px;
+  display: block
+}
+
+.pred-card-title .pred-ellipsis i {
+  color: #B4B4B4;
+  font-size: 24px
+}
+
+.pred-card-title .pred-ellipsis:hover i {
+  color: #666
+}
+
+.pred-card-footer {
+  border-top: 1px solid #E9E9E9;
+  padding: 10px 15px
+}
+
+.pred-card-footer a i {
+  margin-right: 10px
+}
+
+.pred-card-content {
+  padding: 15px
+}
+
+.pred-card-type-solid {
+  background: #558CE3
+}
+
+.pred-card-type-solid * {
+  color: #fff;
+  text-align: center
+}
+
+.pred-card-type-solid .zmdi {
+  font-size: 48px;
+  margin: 30px auto
+}
+
+.pred-card-type-solid h2 {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0 0 20px
+}
+
+.pred-card-type-solid h3 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 18px
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.flex-container > div {
+  margin: 10px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 18px;
+  width: 63px;
+  color: #575757;
+}
+.flex-container > div h5{font-size:12px; font-weight: normal;color: #999;text-align: center}
+.mat-card-content h1{text-align: center; padding:15px 0; line-height: 40px;}
+.mat-card-header {margin: 0 -24px;display:block}
+.mat-card-header-text,.aa{margin:-25px -8px 0 -8px !important;}
+
 /* CSS Document */
 
 /* Reset */

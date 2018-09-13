@@ -1,3 +1,4 @@
+<!--
 <div class="pred-card">
   <div class="pred-card-title">
     <h4>Critical Locations</h4>
@@ -11,4 +12,47 @@
       <i class="zmdi zmdi-open-in-new"></i><span>See details</span>
     </a>
   </div>
+</div>
+-->
+<div class="row">
+
+  <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="x_panel tile fixed_height_320">
+      <div class="x_title">
+        <h2>Critical Location</h2>
+        <ul class="nav navbar-right panel_toolbox">
+          <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Settings 1</a>
+              </li>
+              <li><a href="#">Settings 2</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="close-link"><i class="fa fa-close"></i></a>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="x_content">
+
+        <div class="mat-card-content">
+          <h1>{{dataJson.total}}</h1>
+        </div>
+        <div class="flex-container" >
+          <div *ngFor="let info of dataJson.deviceInfo">
+            <h5>{{info.deviceName}}</h5>
+            {{info.deviceData}}
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
 </div>

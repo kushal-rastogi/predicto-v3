@@ -8,6 +8,27 @@ import {HttpClient} from '@angular/common/http';
 })
 export class AllLocationsCardComponent implements OnInit {
 
+  dataJson = {
+    'total': 50,
+
+    'deviceInfo': [
+      {
+        'deviceName': 'Calvin',
+        'deviceData': 43
+      },
+      {
+        'deviceName': 'Marvin',
+        'deviceData': 95
+      }, {
+        'deviceName': 'Jackson',
+        'deviceData': 60
+      }, {
+        'deviceName': 'Cullen',
+        'deviceData': 68
+      }
+    ]
+  };
+
   data: any = {};
 
   // to resolve the error comming while applying for each
@@ -15,15 +36,15 @@ export class AllLocationsCardComponent implements OnInit {
   // data: Observable<Array<any>>;
 
   constructor(private http: HttpClient) {
-    console.log('contructor');
-    this.getData();
-    this.getData1();
+   // console.log('contructor');
+    /*this.getData();
+    this.getData1();*/
   }
 
   ngOnInit() {
   }
 
-
+/*
   getData() {
     const headers = new Headers();
     headers.append('Access-Control-Allow-Headers', 'Content-Type');
@@ -39,6 +60,6 @@ export class AllLocationsCardComponent implements OnInit {
         this.data = data;
       },
     );
-  }
+  }*/
 
 }
