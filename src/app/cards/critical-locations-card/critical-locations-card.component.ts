@@ -8,22 +8,22 @@ import {Component, OnInit} from '@angular/core';
 export class CriticalLocationsCardComponent implements OnInit {
 
   dataJson = {
-    'total': 50,
+    'total': 27,
 
     'deviceInfo': [
       {
-        'deviceName': 'Calvin',
-        'deviceData': 43
+        'deviceName': 'Kerala',
+        'deviceData': 4
       },
       {
-        'deviceName': 'Marvin',
-        'deviceData': 95
+        'deviceName': 'Punjab',
+        'deviceData': 9
       }, {
-        'deviceName': 'Jackson',
-        'deviceData': 60
+        'deviceName': 'Gurgaon',
+        'deviceData': 6
       }, {
-        'deviceName': 'Cullen',
-        'deviceData': 68
+        'deviceName': 'Delhi',
+        'deviceData': 8
       }
     ]
   };

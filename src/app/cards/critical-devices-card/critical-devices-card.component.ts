@@ -9,22 +9,22 @@ import {HttpClient} from '@angular/common/http';
 export class CriticalDevicesCardComponent implements OnInit {
 
   dataJson = {
-    'total': 50,
+    'total': 42,
 
     'deviceInfo': [
       {
         'deviceName': '220 Transformer',
-        'deviceData': 43
+        'deviceData': 13
       },
       {
         'deviceName': '440 V trans',
-        'deviceData': 95
+        'deviceData': 5
       }, {
         'deviceName': 'Transformer',
-        'deviceData': 60
+        'deviceData': 6
       }, {
         'deviceName': '440 V trans',
-        'deviceData': 68
+        'deviceData': 18
       }
     ]
   };

@@ -9,22 +9,22 @@ import {HttpClient} from '@angular/common/http';
 export class AllLocationsCardComponent implements OnInit {
 
   dataJson = {
-    'total': 50,
+    'total': 125,
 
     'deviceInfo': [
       {
-        'deviceName': 'Calvin',
-        'deviceData': 43
+        'deviceName': 'Delhi',
+        'deviceData': 45
       },
       {
-        'deviceName': 'Marvin',
-        'deviceData': 95
+        'deviceName': 'Goa',
+        'deviceData': 25
       }, {
-        'deviceName': 'Jackson',
-        'deviceData': 60
+        'deviceName': 'Punjab',
+        'deviceData': 41
       }, {
-        'deviceName': 'Cullen',
-        'deviceData': 68
+        'deviceName': 'Kolkata',
+        'deviceData': 14
       }
     ]
   };

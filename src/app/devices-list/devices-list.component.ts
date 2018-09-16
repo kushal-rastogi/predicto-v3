@@ -52,5 +52,45 @@ const ELEMENT_DATA: Element[] = [
   {position: 19, name: 'Potassium', weight: 39.0983, symbol: 'K'},
   {position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca'},
 ];
+const deviceLists = {
+  'deviceList': [
+    {
+      'siteId': '1',
+      'siteName': 'Site B',
+      'siteAreaName': 'IT Delivery',
+      'equipmentName': 'Cooling Tower 1',
+      'conditionLevel': 'Good',
+      'vibrationLevel': '0.66',
+      'equipmentTemperature': '26C',
+      'equipmentUtilization': '85%',
+      'powerUsuage': '225 KWH',
+      'runningIndicator': true
+    },
+    {
+      'siteId': '2',
+      'siteName': 'Site A',
+      'siteAreaName': 'IT Delivery',
+      'equipmentName': 'Cooling Tower 1',
+      'conditionLevel': 'Good',
+      'vibrationLevel': '0.66',
+      'equipmentTemperature': '26C',
+      'equipmentUtilization': '85%',
+      'powerUsuage': '225 KWH',
+      'runningIndicator': true
+    },
+    {
+      'siteId': '3',
+      'siteName': 'Site C',
+      'siteAreaName': 'IT Delivery',
+      'equipmentName': 'Cooling Tower 1',
+      'conditionLevel': 'Good',
+      'vibrationLevel': '0.66',
+      'equipmentTemperature': '26C',
+      'equipmentUtilization': '85%',
+      'powerUsuage': '225 KWH',
+      'runningIndicator': true
+    }
+  ]
+};
 
 

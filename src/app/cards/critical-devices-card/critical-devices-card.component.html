@@ -360,9 +360,9 @@
   </div>
 </div>-->
 
-<div class="row">
+<!--<div class="row">-->
 
-  <div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="col-md-4 col-sm-4 col-xs-12 info-card">
     <div class="x_panel tile fixed_height_320">
       <div class="x_title">
         <h2>Critical Devices</h2>
@@ -385,10 +385,10 @@
       </div>
       <div class="x_content">
         <div class="mat-card-content">
-          <h1>{{data.total}}</h1>
+          <h1>{{dataJson.total}}</h1>
         </div>
         <div class="flex-container">
-          <div *ngFor="let info of data.deviceInfo">
+          <div *ngFor="let info of dataJson.deviceInfo">
             <h5>{{info.deviceName}}</h5>
             {{info.deviceData}}
           </div>
@@ -398,4 +398,4 @@
     </div>
   </div>
 
-</div>
+<!--</div>-->
