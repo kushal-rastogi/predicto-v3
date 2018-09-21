@@ -9,8 +9,9 @@ import {MatPaginator, MatTableDataSource} from '@angular/material';
 })
 export class DevicesListComponent {
 
-  displayedColumns = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
+  displayedColumns = ['siteId', 'siteName', 'siteAreaName', 'equipmentName', 'conditionLevel', 'vibrationLevel', 'equipmentTemperature', 'equipmentUtilization', 'powerUsage', 'runningIndicator'];
+  // dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
+  dataSource = new MatTableDataSource<Element>(deviceLists);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -24,13 +25,27 @@ export class DevicesListComponent {
 }
 
 export interface Element {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  siteId: number;
+  siteName: string;
+  siteAreaName: string;
+  equipmentName: string;
+  conditionLevel: string;
+  vibrationLevel: string;
+  equipmentTemperature: string;
+  equipmentUtilization: string;
+  powerUsage: string;
+  runningIndicator: boolean;
 }
 
-const ELEMENT_DATA: Element[] = [
+// export interface Element {
+//   name: string;
+//   position: number;
+//   weight: number;
+//   symbol: string;
+// }
+
+
+/*const ELEMENT_DATA: Element[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
   {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
@@ -51,46 +66,296 @@ const ELEMENT_DATA: Element[] = [
   {position: 18, name: 'Argon', weight: 39.948, symbol: 'Ar'},
   {position: 19, name: 'Potassium', weight: 39.0983, symbol: 'K'},
   {position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca'},
+];*/
+const deviceLists: Element[] = [
+  {
+    siteId: 1,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 2,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 4,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 5,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 6,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 7,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 8,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 9,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 10,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 11,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 12,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 13,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 14,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  },
+  {
+    siteId: 3,
+    siteName: 'Site B',
+    siteAreaName: 'IT Delivery',
+    equipmentName: 'Cooling Tower 1',
+    conditionLevel: 'Good',
+    vibrationLevel: '0.66',
+    equipmentTemperature: '26C',
+    equipmentUtilization: '85 % ',
+    powerUsage: '225 KWH',
+    runningIndicator: true
+  }
 ];
-const deviceLists = {
-  'deviceList': [
-    {
-      'siteId': '1',
-      'siteName': 'Site B',
-      'siteAreaName': 'IT Delivery',
-      'equipmentName': 'Cooling Tower 1',
-      'conditionLevel': 'Good',
-      'vibrationLevel': '0.66',
-      'equipmentTemperature': '26C',
-      'equipmentUtilization': '85%',
-      'powerUsuage': '225 KWH',
-      'runningIndicator': true
-    },
-    {
-      'siteId': '2',
-      'siteName': 'Site A',
-      'siteAreaName': 'IT Delivery',
-      'equipmentName': 'Cooling Tower 1',
-      'conditionLevel': 'Good',
-      'vibrationLevel': '0.66',
-      'equipmentTemperature': '26C',
-      'equipmentUtilization': '85%',
-      'powerUsuage': '225 KWH',
-      'runningIndicator': true
-    },
-    {
-      'siteId': '3',
-      'siteName': 'Site C',
-      'siteAreaName': 'IT Delivery',
-      'equipmentName': 'Cooling Tower 1',
-      'conditionLevel': 'Good',
-      'vibrationLevel': '0.66',
-      'equipmentTemperature': '26C',
-      'equipmentUtilization': '85%',
-      'powerUsuage': '225 KWH',
-      'runningIndicator': true
-    }
-  ]
-};
 
 

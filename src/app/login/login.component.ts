@@ -1,6 +1,6 @@
-import { AuthService } from '../services/authService/auth.service';
-import { Component } from '@angular/core';
-import { Router } from "@angular/router";
+import {AuthService} from '../services/authService/auth.service';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'login',
@@ -12,15 +12,19 @@ export class LoginComponent {
 
   constructor(
     private router: Router,
-    private authService: AuthService) { }
+    private authService: AuthService) {
+  }
 
   signIn(credentials) {
     this.authService.login(credentials)
       .subscribe(result => {
-        if (result)
+
+        if (result) {
           this.router.navigate(['/dashboard']);
-        else
+        } else {
           this.invalidLogin = true;
+        }
+
       });
   }
 }

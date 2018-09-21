@@ -1,47 +1,70 @@
 <div class="right_col" role="main">
-<div class="example-container mat-elevation-z8">
+  <div class="example-container mat-elevation-z8">
 
 
-  <mat-table #table [dataSource]="dataSource">
+    <mat-table #table [dataSource]="dataSource">
 
-    <!-- Position Column -->
-    <ng-container matColumnDef="position">
-      <mat-header-cell *matHeaderCellDef> No.</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.position}}</mat-cell>
-    </ng-container>
+      <!-- Position Column -->
+      <ng-container matColumnDef="siteId">
+        <mat-header-cell *matHeaderCellDef> Site Id</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.siteId}}</mat-cell>
+      </ng-container>
 
-    <!-- Name Column -->
-    <ng-container matColumnDef="name">
-      <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.name}}</mat-cell>
-    </ng-container>
+      <!-- Name Column -->
+      <ng-container matColumnDef="siteName">
+        <mat-header-cell *matHeaderCellDef> Site Name</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.siteName}}</mat-cell>
+      </ng-container>
 
-    <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <mat-header-cell *matHeaderCellDef> Weight</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.weight}}</mat-cell>
-    </ng-container>
+      <!-- Weight Column -->
+      <ng-container matColumnDef="siteAreaName">
+        <mat-header-cell *matHeaderCellDef> Area Name</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.siteAreaName}}</mat-cell>
+      </ng-container>
 
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-      <mat-header-cell *matHeaderCellDef> Symbol</mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{element.symbol}}</mat-cell>
-    </ng-container>
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="equipmentName">
+        <mat-header-cell *matHeaderCellDef> Equipment Name</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.equipmentName}}</mat-cell>
+      </ng-container>
 
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
+      <ng-container matColumnDef="conditionLevel">
+        <mat-header-cell *matHeaderCellDef> Condition Level</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.conditionLevel}}</mat-cell>
+      </ng-container>
 
-  <table>
-    <tr *ngFor="let a of deviceLists">
-      <td>{{a.siteId}}</td>
-    </tr>
-  </table>
+      <ng-container matColumnDef="vibrationLevel">
+        <mat-header-cell *matHeaderCellDef> Vibration Level</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.vibrationLevel}}</mat-cell>
+      </ng-container>
 
-  <mat-paginator #paginator
-                 [pageSize]="10"
-                 [pageSizeOptions]="[5, 10, 20]"
-                 [showFirstLastButtons]="true">
-  </mat-paginator>
-</div>
+      <ng-container matColumnDef="equipmentTemperature">
+        <mat-header-cell *matHeaderCellDef> Equipment Temperature</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.equipmentTemperature}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="equipmentUtilization">
+        <mat-header-cell *matHeaderCellDef> Equipment Utilization</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.equipmentUtilization}}</mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="powerUsage">
+        <mat-header-cell *matHeaderCellDef> Power Usage</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.powerUsage}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="runningIndicator">
+        <mat-header-cell *matHeaderCellDef> Running Indicator</mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.runningIndicator}}</mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <mat-paginator #paginator
+                   [pageSize]="10"
+                   [pageSizeOptions]="[5, 10, 20]"
+                   [showFirstLastButtons]="true">
+    </mat-paginator>
+  </div>
 </div>
