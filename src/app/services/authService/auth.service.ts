@@ -31,7 +31,6 @@ export class AuthService {
 
         if (result && result.status) {
           /*localStorage.setItem('token', result.token);
-alert();
           let jwt = new JwtHelper();
           this.currentUser = jwt.decodeToken(localStorage.getItem('token'));*/
           return true;

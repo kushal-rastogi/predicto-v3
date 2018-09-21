@@ -12,6 +12,5 @@ export class UserInfoCardComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
-    console.log('hello');
   }
 }

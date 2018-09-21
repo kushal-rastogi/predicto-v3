@@ -123,7 +123,7 @@ export class AllDevicesCardComponent implements OnInit {
         }
       };
 
-      function drawMaterialChart() {
+      /*function drawMaterialChart() {
         var materialChart = new google.charts.Line(chartDiv);
         materialChart.draw(data, materialOptions);
         button.innerText = 'Change to Classic';
@@ -137,7 +137,7 @@ export class AllDevicesCardComponent implements OnInit {
         button.onclick = drawMaterialChart;
       }
 
-      drawMaterialChart();
+      drawMaterialChart();*/
 
     }
 
